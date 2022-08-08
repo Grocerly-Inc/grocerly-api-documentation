@@ -1,0 +1,8 @@
+input: .
+output: .retype
+url: https://docs.grocerly.store
+branding:
+  title: Grocerly
+  label: Docs
+footer:
+  copyright: '&copy; Copyright {{ year }}. All rights reserved.'
