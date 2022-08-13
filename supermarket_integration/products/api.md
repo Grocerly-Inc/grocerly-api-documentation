@@ -1,6 +1,7 @@
 ---
 label: Product API Sync
 icon: sync
+order: 3
 ---
 
 This sections provides the necessary information required to **CREATE**, **UPDATE** and **DELETE** products on the grocerly system allowing you to synchronise your products.

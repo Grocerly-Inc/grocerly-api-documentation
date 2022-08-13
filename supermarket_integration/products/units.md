@@ -1,6 +1,7 @@
 ---
 label: Product Units
 icon: number
+order: 2
 ---
 
 All of the supported Product Units are listed below:
