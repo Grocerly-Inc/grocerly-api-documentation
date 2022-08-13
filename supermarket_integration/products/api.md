@@ -10,7 +10,7 @@ This sections provides the necessary information required to **CREATE**, **UPDAT
 
 #### Create a new product
 
-> Please view [Product Units](units.md) for a full list of all available units.
+> Please view [Product Units](units.md) and [Product Categories](categories.md) for a full list of all available product units and categories.
 
 +++ Request
 
@@ -26,7 +26,7 @@ Content-Type: application/json
   barcode: 'XXXXXX', // Must be unique
   name: "Heinz Ketchup",
   price: 200, // In cents - Translates to 2 euro
-  categoryId: 'XXXXXX', // One of the Grocerly categories
+  categoryId: 'XXXXXX', // View the Product Categories page for a full list of all possible categories
   inStock: true, // Whether an item is in stock
   unit: 'GRAM', // View the Product Units page for a full list of all possible units
   weight: 100,
