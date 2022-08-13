@@ -9,33 +9,29 @@
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Identity</title>
-    <meta name="title" content="Identity">
-    <meta name="description" content="By default, The Grocerly Team will have set up some information of your supermarket profile." />
+    <title>Events</title>
+    <meta name="title" content="Events">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.grocerly.dev/supermarket_integration/identity/" />
+    <link rel="canonical" href="https://docs.grocerly.dev/supermarket_integration/notifications/events/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.grocerly.dev/supermarket_integration/identity/">
-    <meta property="og:title" content="Identity">
-    <meta property="og:description" content="By default, The Grocerly Team will have set up some information of your supermarket profile.">
+    <meta property="og:url" content="https://docs.grocerly.dev/supermarket_integration/notifications/events/">
+    <meta property="og:title" content="Events">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.grocerly.dev/supermarket_integration/identity/">
-    <meta property="twitter:title" content="Identity">
-    <meta property="twitter:description" content="By default, The Grocerly Team will have set up some information of your supermarket profile.">
+    <meta property="twitter:url" content="https://docs.grocerly.dev/supermarket_integration/notifications/events/">
+    <meta property="twitter:title" content="Events">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.713726178097" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.713726178097" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.713726178097" data-turbo-eval="false" defer></script>
-    <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.713726178097" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.713726178097" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.713726178097" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.713726178097" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -50,7 +46,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-2xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Grocerly</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
@@ -153,79 +149,12 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="identity" class="break-words">
+<doc-anchor-target id="events" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#identity">#</doc-anchor-trigger>
-        <span>Identity</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#events">#</doc-anchor-trigger>
+        <span>Events</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="fetch-the-supermarket">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#fetch-the-supermarket">#</doc-anchor-trigger>
-        <span>Fetch the supermarket</span>
-    </h4>
-</doc-anchor-target>
-<p>By default, The Grocerly Team will have set up some information of your supermarket profile. You can fetch the identity information that Grocerly stores about the supermarket by using the following request:</p>
-<p>Request:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">GET /supermarket/identity
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json</code></pre>
-</doc-codeblock></div>
-<p>Response:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">{
-  name: 'Your Supermarket',
-  domain: 'https://yoursupermarket.com',
-  timezone: 'Europe/Malta',
-  logoUrl: 'https://storage.googleapis.com/grocerly/your-supermarket.png',
-  currencyCode: 'EUR',
-  location: {
-      latitude: 35.92296519540646,
-      longitude: 14.475051440278998,
-      address: 'Uqija Street, Ibragg',
-      city: 'Swieqi',
-      country: 'Malta',
-  },
-  contact: {
-      email: 'info@yoursupermarket.com',
-      phoneNumber: '+35677486469' // This will be used when the courier needs to contact the supermarket.
-  }
-}
-</code></pre>
-</doc-codeblock></div>
-<hr />
-<doc-anchor-target id="update-supermarket-information">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#update-supermarket-information">#</doc-anchor-trigger>
-        <span>Update supermarket information</span>
-    </h4>
-</doc-anchor-target>
-<p>In order to update any out of date or additional information, you can use the request payload below.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">PUT /supermarket/identity
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json</code></pre>
-</doc-codeblock></div>
-<p>Request Payload:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">{
-    logo: File, // Array buffer
-    location: {
-      latitude: 35.92296519540646,
-      longitude: 14.475051440278998,
-      address: 'Uqija Street, Ibragg',
-      city: 'Swieqi',
-      country: 'Malta',
-    },
-    contact: {
-        email: 'info@yoursupermarket.com',
-        phoneNumber: '+35677486469' // This will be used when the courier needs to contact the supermarket.
-    }
-}</code></pre>
-</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -235,23 +164,16 @@ Content-Type: application/json</code></pre>
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../supermarket_integration/authorization/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../supermarket_integration/notifications/notifications/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Authorization</span>
+                                                <span class="block mt-1">Webhooks</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../supermarket_integration/products/api/">
-                                            <span>
-                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Product API Sync</span>
-                                            </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                                        </a>
                                     </div>
                                 </nav>
                             </footer>
@@ -292,6 +214,6 @@ Content-Type: application/json</code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Identity", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Events", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
