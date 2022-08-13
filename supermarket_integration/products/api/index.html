@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.713724139697">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.713724261883">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -30,12 +30,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../resources/css/retype.css?v=2.4.0.713724139697" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.713724261883" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.713724139697" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.713724261883" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.713724139697" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.713724139697" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.713724261883" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.713724261883" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -168,7 +168,7 @@
     </h4>
 </doc-anchor-target>
 <blockquote>
-<p>Please view <a href="../units/">Product Units</a> for a full list of all available units.</p>
+<p>Please view <a href="../units/">Product Units</a> and <a href="../categories/">Product Categories</a> for a full list of all available product units and categories.</p>
 </blockquote>
 <doc-tabs>
 <doc-tab id="request">
@@ -184,7 +184,7 @@ Content-Type: application/json</code></pre>
   barcode: 'XXXXXX', // Must be unique
   name: &quot;Heinz Ketchup&quot;,
   price: 200, // In cents - Translates to 2 euro
-  categoryId: 'XXXXXX', // One of the Grocerly categories
+  categoryId: 'XXXXXX', // View the Product Categories page for a full list of all possible categories
   inStock: true, // Whether an item is in stock
   unit: 'GRAM', // View the Product Units page for a full list of all possible units
   weight: 100,
