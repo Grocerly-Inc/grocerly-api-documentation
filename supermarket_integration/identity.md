@@ -45,7 +45,7 @@ Response:
 
 #### Update supermarket information
 
-In order to update any out or additional information, you can use the request payload below.
+In order to update any out of date or additional information, you can use the request payload below.
 
 ```
 PUT /supermarket/identity
