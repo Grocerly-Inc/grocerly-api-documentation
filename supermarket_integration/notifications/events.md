@@ -1,5 +1,5 @@
 ---
 label: Events
-icon: issue-opened
+icon: pulse
 order: 1
 ---
