@@ -17,7 +17,7 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 ```js [!badge variant="primary" text="POST"] /supermarket/products
 {
   barcode: 'XXXXXX', // Must be unique
-  name: "Heinz Ketchup",
+  name: 'Heinz Ketchup',
   price: 200, // In cents - Translates to 2 euro
   categoryId: 'XXXXXX', // View the Product Categories page for a full list of all possible categories
   inStock: true, // Whether an item is in stock
@@ -46,7 +46,7 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 ```js [!badge variant="warning" text="PUT"] /supermarket/products/:PRODUCT_BARCODE:
 {
-  name: "Daniels Ketchup",
+  name: 'Another Ketchup',
   price: 400, // In cents - Translates to 4 euro
   inStock: true, // Whether an item is in stock
   image?: File, // (Optional) Buffer Array
