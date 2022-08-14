@@ -4,7 +4,7 @@ icon: stack
 order: 1
 ---
 
-All of the supported Product Categories are listed below:
+All of the supported Product Categories, referenced by their IDs, are listed below:
 
 | Category ID                | Category Name       |
 | -------------------------- | ------------------- |
