@@ -14,7 +14,7 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 +++ Request
 
-```js [!badge variant="primary" text="POST"] /supermarket/products/
+```js [!badge variant="primary" text="POST"] /supermarket/products
 {
   barcode: 'XXXXXX', // Must be unique
   name: "Heinz Ketchup",
