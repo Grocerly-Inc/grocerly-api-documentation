@@ -13,6 +13,7 @@ Event: `order_completed`
 ```js
 {
     event: 'order_completed',
+    orderNumber: 23,
     customer: {
         firstName: 'John',
         lastName: 'Doe',
@@ -22,6 +23,7 @@ Event: `order_completed`
         {
             barcode: 'XXXXXX',
             quantity: 2,
+            price: 200, // Price in cents of the product at the time of placing an order.
         }
     ]
 }
