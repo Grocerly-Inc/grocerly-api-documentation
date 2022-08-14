@@ -5,4 +5,10 @@ icon: home
 
 This documentation will walk you through integrating with the Grocerly platform.
 
-[!ref icon="organization" text="Supermarket Integration"](/supermarket_integration/authorization.md)
+=== Supermarkets
+
+Integrate with the Grocerly platform to allow Grocerly users to shop for products from your supermarket.
+
+[!button text="Get Started" icon="arrow-right" iconAlign="right"](/supermarket_integration/authorization.md)
+
+===
