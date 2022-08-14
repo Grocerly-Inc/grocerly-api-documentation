@@ -4,7 +4,7 @@ icon: shield-lock
 order: 5
 ---
 
-An API Key will be provided by the Grocerly Team that will identify the supermarket across all requests.
+An API Key will be provided by Grocerly that will identify the supermarket across all requests.
 
 Place the API Key in the header of each request as shown below:
 

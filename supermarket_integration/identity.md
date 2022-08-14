@@ -6,8 +6,7 @@ order: 4
 
 #### Fetch the supermarket
 
-By default, The Grocerly Team will have set up some information of your supermarket profile. You can fetch the identity information that Grocerly stores about the supermarket by using the following request:
-
+By default, Grocerly will have set up some information of your supermarket profile. You can fetch the identity information that Grocerly stores about the supermarket by using the following request:
 
 +++ Request
 
@@ -40,6 +39,7 @@ Content-Type: application/json
   }
 }
 ```
+
 +++
 
 ---
@@ -73,4 +73,5 @@ Content-Type: application/json
     }
 }
 ```
+
 +++
