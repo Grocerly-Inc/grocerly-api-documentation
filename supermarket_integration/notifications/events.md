@@ -19,7 +19,7 @@ Event: `order_completed`
         lastName: 'Doe',
         email: 'johndoe@example.com'
     },
-    items: [
+    items: [ // Array of product items
         {
             barcode: 'XXXXXX',
             quantity: 2,
