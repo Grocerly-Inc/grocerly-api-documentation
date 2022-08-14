@@ -14,8 +14,8 @@ Grocerly allows you to implement business logic that reacts to order journey eve
 
 ```js [!badge variant="primary" text="POST"] /supermarket/webhook
 {
-  webhookUrl: 'https://yourwebhookurl.supermarket'; // Replace this with your webhook url.
-  events: ['order_complete']; // For a full set of events visit the events page mentioned above.
+  webhookUrl: 'https://yourwebhookurl.supermarket', // Replace this with your webhook url.
+  events: ['order_complete'], // For a full set of events visit the events page mentioned above.
 }
 ```
 
