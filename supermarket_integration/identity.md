@@ -32,7 +32,7 @@ By default, Grocerly will have set up some information of your supermarket profi
   },
   contact: {
       email: 'info@yoursupermarket.com',
-      phoneNumber: '+35677486469' // This will be used when the courier needs to contact the supermarket.
+      phoneNumber: '+35612345678' // This will be used when the courier needs to contact the supermarket.
   }
 }
 ```
@@ -60,7 +60,7 @@ In order to update any out of date or additional information, you can use the re
     },
     contact: {
         email: 'info@yoursupermarket.com',
-        phoneNumber: '+35677486469' // This will be used when the courier needs to contact the supermarket.
+        phoneNumber: '+35612345678' // This will be used when the courier needs to contact the supermarket.
     }
 }
 ```
