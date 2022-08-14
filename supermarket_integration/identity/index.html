@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.713823516235">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.713826403963">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -30,12 +30,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.713823516235" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.713826403963" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.713823516235" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.713826403963" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.713823516235" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.713823516235" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.713826403963" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.713826403963" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -170,10 +170,10 @@
 <doc-tab id="request">
 <template #title>Request</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">GET /supermarket/identity
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json</code></pre>
+<div class="codeblock-title"><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>GET</span>
+</span> /supermarket/identity</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">// Empty body</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 <doc-tab id="response">
@@ -208,24 +208,22 @@ Content-Type: application/json</code></pre>
     </h4>
 </doc-anchor-target>
 <p>In order to update any out of date or additional information, you can use the request payload below.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">PUT /supermarket/identity
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json</code></pre>
-</doc-codeblock></div>
 <doc-tabs>
 <doc-tab id="request">
 <template #title>Request</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">{
+<div class="codeblock-title"><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 h-6 px-2 text-xs rounded-md">
+    <span>PUT</span>
+</span> /supermarket/identity</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">
+{
     logo: File, // Array buffer
     location: {
-      latitude: 35.92296519540646,
-      longitude: 14.475051440278998,
-      address: 'Uqija Street, Ibragg',
-      city: 'Swieqi',
-      country: 'Malta',
+      latitude: 33.92296519540646,
+      longitude: 12.475051440278998,
+      address: 'address',
+      city: 'city',
+      country: 'country',
     },
     contact: {
         email: 'info@yoursupermarket.com',
