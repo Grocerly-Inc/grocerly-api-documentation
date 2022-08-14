@@ -4,7 +4,7 @@ icon: sync
 order: 3
 ---
 
-This sections provides the necessary information required to **CREATE**, **UPDATE** and **DELETE** products on the grocerly system allowing you to synchronise your products.
+These sections provide the necessary information required to **CREATE**, **UPDATE** and **DELETE** products on the Grocerly system allowing you to synchronise your products.
 
 > Please view the [Product Units](units.md) and [Product Categories](categories.md) pages for a full list of all available product units and categories.
 
