@@ -6,7 +6,7 @@ order: 2
 
 All of the supported Product Units are listed below:
 
-| Unit Name | Comments |
+| Unit Name | Type |
 | ---------- || ----------|
 | GRAM | Mass |
 | KILOGRAM | Mass |
