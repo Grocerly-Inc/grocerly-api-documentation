@@ -8,7 +8,8 @@ order: 4
 
 By default, The Grocerly Team will have set up some information of your supermarket profile. You can fetch the identity information that Grocerly stores about the supermarket by using the following request:
 
-Request:
+
++++ Request
 
 ```
 GET /supermarket/identity
@@ -17,7 +18,7 @@ X-API-KEY: :YOUR_API_KEY:
 Content-Type: application/json
 ```
 
-Response:
++++ Response
 
 ```js
 {
@@ -38,8 +39,8 @@ Response:
       phoneNumber: '+35677486469' // This will be used when the courier needs to contact the supermarket.
   }
 }
-
 ```
++++
 
 ---
 
