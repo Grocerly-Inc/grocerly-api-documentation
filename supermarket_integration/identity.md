@@ -24,11 +24,11 @@ By default, Grocerly will have set up some information of your supermarket profi
   logoUrl: 'https://storage.googleapis.com/grocerly/your-supermarket.png',
   currencyCode: 'EUR',
   location: {
-      latitude: 35.92296519540646,
-      longitude: 14.475051440278998,
-      address: 'Uqija Street, Ibragg',
-      city: 'Swieqi',
-      country: 'Malta',
+      latitude: 33.92296519540646,
+      longitude: 12.475051440278998,
+      address: 'address',
+      city: 'city',
+      country: 'country',
   },
   contact: {
       email: 'info@yoursupermarket.com',
