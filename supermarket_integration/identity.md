@@ -10,11 +10,8 @@ By default, Grocerly will have set up some information of your supermarket profi
 
 +++ Request
 
-```
-GET /supermarket/identity
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json
+```js [!badge variant="success" text="GET"] /supermarket/identity
+// Empty body
 ```
 
 +++ Response
@@ -48,24 +45,18 @@ Content-Type: application/json
 
 In order to update any out of date or additional information, you can use the request payload below.
 
-```
-PUT /supermarket/identity
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json
-```
-
 +++ Request
 
-```js
+```js [!badge variant="warning" text="PUT"] /supermarket/identity
+
 {
     logo: File, // Array buffer
     location: {
-      latitude: 35.92296519540646,
-      longitude: 14.475051440278998,
-      address: 'Uqija Street, Ibragg',
-      city: 'Swieqi',
-      country: 'Malta',
+      latitude: 33.92296519540646,
+      longitude: 12.475051440278998,
+      address: 'address',
+      city: 'city',
+      country: 'country',
     },
     contact: {
         email: 'info@yoursupermarket.com',

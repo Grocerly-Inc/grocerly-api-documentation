@@ -32,11 +32,8 @@ Additionally you can fetch the above list programatically using the following en
 
 +++ Request
 
-```
-GET /supermarket/product-categories
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json
+```js [!badge variant="success" text="GET"] /supermarket/product-categories
+// Empty body
 ```
 
 +++

@@ -14,14 +14,7 @@ This sections provides the necessary information required to **CREATE**, **UPDAT
 
 +++ Request
 
-```
-POST /supermarket/products/
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json
-```
-
-```js
+```js [!badge variant="primary" text="POST"] /supermarket/products/
 {
   barcode: 'XXXXXX', // Must be unique
   name: "Heinz Ketchup",
@@ -43,14 +36,7 @@ Content-Type: application/json
 
 +++ Request
 
-```
-PUT /supermarket/products/:PRODUCT_BARCODE:
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json
-```
-
-```js
+```js [!badge variant="warning" text="PUT"] /supermarket/products/:PRODUCT_BARCODE:
 {
   name: "Daniels Ketchup",
   price: 400, // In cents - Translates to 4 euro
@@ -67,11 +53,8 @@ Content-Type: application/json
 
 +++ Request
 
-```
-DELETE /supermarket/products/:PRODUCT_ID:
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json
+```js [!badge variant="danger" text="DELETE"] /supermarket/products/:PRODUCT_ID:
+// Empty body
 ```
 
 +++

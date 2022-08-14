@@ -8,7 +8,7 @@ Based on the notifications you are subscribed to, Grocerly will **POST** the fol
 
 ---
 
-```js [!badge Event] **order_completed**
+```js [!badge variant="ghost" text="Event"] **order_completed**
 {
     event: 'order_completed',
     orderNumber: 23,
