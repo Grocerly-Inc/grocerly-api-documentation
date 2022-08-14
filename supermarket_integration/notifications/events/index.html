@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.713817801236">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.713818054158">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Events</title>
     <meta name="title" content="Events">
-    <meta name="description" content="You can subscribe to different notifications by adding the events below." />
+    <meta name="description" content="Based on the notifications you are subscribed to, Grocerly will POST the following payloads to the webhook you provided." />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.grocerly.dev/supermarket_integration/notifications/events/" />
@@ -20,21 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.grocerly.dev/supermarket_integration/notifications/events/">
     <meta property="og:title" content="Events">
-    <meta property="og:description" content="You can subscribe to different notifications by adding the events below.">
+    <meta property="og:description" content="Based on the notifications you are subscribed to, Grocerly will POST the following payloads to the webhook you provided.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.grocerly.dev/supermarket_integration/notifications/events/">
     <meta property="twitter:title" content="Events">
-    <meta property="twitter:description" content="You can subscribe to different notifications by adding the events below.">
+    <meta property="twitter:description" content="Based on the notifications you are subscribed to, Grocerly will POST the following payloads to the webhook you provided.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../resources/css/retype.css?v=2.4.0.713817801236" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.713818054158" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.713817801236" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.713818054158" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.713817801236" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.713818054158" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.713818054158" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -158,24 +159,25 @@
         <span>Events</span>
     </h1>
 </doc-anchor-target>
-<p>You can subscribe to different notifications by adding the events below.</p>
-<doc-anchor-target id="subscribe-to-notifications">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#subscribe-to-notifications">#</doc-anchor-trigger>
-        <span>Subscribe to Notifications</span>
-    </h4>
-</doc-anchor-target>
-<doc-tabs>
-<doc-tab id="request">
-<template #title>Request</template>
+<p>Based on the notifications you are subscribed to, Grocerly will <strong>POST</strong> the following payloads to the webhook you provided.</p>
+<hr />
+<p>Event: <code v-pre>order_completed</code></p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">GET /supermarket/webhooks/subscriptions
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json</code></pre>
+<pre class="language-javascript"><code v-pre class="language-javascript">{
+    event: 'order_completed',
+    customer: {
+        firstName: 'John',
+        lastName: 'Doe',
+        email: 'johndoe@example.com'
+    },
+    items: [
+        {
+            barcode: 'XXXXXX',
+            quantity: 2,
+        }
+    ]
+}</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
 
                                 
                                 <!-- Required only on API pages -->
@@ -235,6 +237,6 @@ Content-Type: application/json</code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Events", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Events", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
