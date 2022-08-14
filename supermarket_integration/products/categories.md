@@ -58,7 +58,7 @@ Additionally you can fetch the above list programatically using the following en
       name: 'Chilled and Dairy',
     },
     ...
-  ];
+  ]
 }
 ```
 
