@@ -19,6 +19,14 @@ Grocerly allows you to implement business logic that reacts to order journey eve
 }
 ```
 
++++ Response
+
+```js
+{
+  success: true,
+}
+```
+
 +++
 
 > A supermarket can only subscribe to events using a **single** webhook. If you would like to update the webhook url with a new one, simply re-run the above request.

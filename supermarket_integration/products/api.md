@@ -28,6 +28,14 @@ This sections provides the necessary information required to **CREATE**, **UPDAT
 }
 ```
 
++++ Response
+
+```js
+{
+  success: true,
+}
+```
+
 +++
 
 ---
@@ -45,6 +53,14 @@ This sections provides the necessary information required to **CREATE**, **UPDAT
 }
 ```
 
++++ Response
+
+```js
+{
+  success: true,
+}
+```
+
 +++
 
 ---
@@ -55,6 +71,14 @@ This sections provides the necessary information required to **CREATE**, **UPDAT
 
 ```js [!badge variant="danger" text="DELETE"] /supermarket/products/:PRODUCT_ID:
 // Empty body
+```
+
++++ Response
+
+```js
+{
+  success: true,
+}
 ```
 
 +++

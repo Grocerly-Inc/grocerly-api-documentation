@@ -65,4 +65,12 @@ In order to update any out of date or additional information, you can use the re
 }
 ```
 
++++ Response
+
+```js
+{
+  success: true,
+}
+```
+
 +++
