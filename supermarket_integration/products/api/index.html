@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.713829285889">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.713829361731">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -30,12 +30,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../resources/css/retype.css?v=2.4.0.713829285889" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.713829361731" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.713829285889" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.713829361731" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.713829285889" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.713829285889" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.713829361731" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.713829361731" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -179,7 +179,7 @@
 </span> /supermarket/products</div>
 <pre class="language-javascript"><code v-pre class="language-javascript">{
   barcode: 'XXXXXX', // Must be unique
-  name: &quot;Heinz Ketchup&quot;,
+  name: 'Heinz Ketchup',
   price: 200, // In cents - Translates to 2 euro
   categoryId: 'XXXXXX', // View the Product Categories page for a full list of all possible categories
   inStock: true, // Whether an item is in stock
@@ -214,7 +214,7 @@
     <span>PUT</span>
 </span> /supermarket/products/:PRODUCT_BARCODE:</div>
 <pre class="language-javascript"><code v-pre class="language-javascript">{
-  name: &quot;Daniels Ketchup&quot;,
+  name: 'Another Ketchup',
   price: 400, // In cents - Translates to 4 euro
   inStock: true, // Whether an item is in stock
   image?: File, // (Optional) Buffer Array
