@@ -9,7 +9,7 @@ An API Key will be provided by Grocerly that will identify the supermarket acros
 Place the API Key in the header of each request as shown below:
 
 ```
-Path :API_PATH:
 Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
+Path: ENDPOINT
+X-API-KEY: YOUR_API_KEY
 ```
