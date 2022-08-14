@@ -8,16 +8,16 @@ All of the supported Product Units are listed below:
 
 | Unit Name | Type |
 | ---------- || ----------|
-| GRAM | Mass |
-| KILOGRAM | Mass |
-| TEASPOON | Volume |
-| TABLESPOON | Volume |
-| CUP | Volume |
-| PINT |Volume |
-| MILLILITRE | Volume |
-| CENTILITRE | Volume |
-| LITRE | Volume |
-| METRE | Length |
-| CENTIMETRE | Length |
-| MILLIMETRE | Length |
-| INDIVIDUAL | One of itself |
+| `GRAM` | _Mass_ |
+| `KILOGRAM` | _Mass_ |
+| `TEASPOON` | _Volume_ |
+| `TABLESPOON` | _Volume_ |
+| `CUP` | _Volume_ |
+| `PINT` |_Volume_ |
+| `MILLILITRE` | _Volume_ |
+| `CENTILITRE` | _Volume_ |
+| `LITRE` | _Volume_ |
+| `METRE` | _Length_ |
+| `CENTIMETRE` | _Length_ |
+| `MILLIMETRE` | _Length_ |
+| `INDIVIDUAL` | _One of itself_ |

@@ -4,7 +4,7 @@ icon: issue-opened
 order: 2
 ---
 
-Grocerly allows you to implement business logic that reacts to order journey events in real time. We notify you of these events by means of webhooks. By subscribing to certain events, we will **POST** notifications to your webhook as they happen.
+Grocerly allows you to implement business logic that reacts to order journey events in real-time. We notify you of these events by means of webhooks. By subscribing to certain events, we will **POST** notifications to your webhook as they happen.
 
 > You can view supported [Events](events.md) over here.
 
@@ -12,17 +12,18 @@ Grocerly allows you to implement business logic that reacts to order journey eve
 
 +++ Request
 
+```js [!badge variant="primary" text="POST"] /supermarket/webhook
+{
+  webhookUrl: 'https://yourwebhookurl.supermarket', // Replace this with your webhook url.
+  events: ['order_complete'], // For a full set of events visit the events page mentioned above.
+}
 ```
-POST /supermarket/webhook
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json
-```
+
++++ Response
 
 ```js
 {
-  webhookUrl: 'https://yourwebhookurl.supermarket' // Replace this with your webhook url.
-  events: ['order_complete'] // For a full set of events visit the events page mentioned above.
+  success: true,
 }
 ```
 

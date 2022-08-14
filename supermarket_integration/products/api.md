@@ -4,7 +4,7 @@ icon: sync
 order: 3
 ---
 
-This sections provides the necessary information required to **CREATE**, **UPDATE** and **DELETE** products on the grocerly system allowing you to synchronise your products.
+These sections provide the necessary information required to **CREATE**, **UPDATE** and **DELETE** products on the Grocerly system allowing you to synchronise your products.
 
 > Please view the [Product Units](units.md) and [Product Categories](categories.md) pages for a full list of all available product units and categories.
 
@@ -14,17 +14,10 @@ This sections provides the necessary information required to **CREATE**, **UPDAT
 
 +++ Request
 
-```
-POST /supermarket/products/
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json
-```
-
-```js
+```js [!badge variant="primary" text="POST"] /supermarket/products
 {
   barcode: 'XXXXXX', // Must be unique
-  name: "Heinz Ketchup",
+  name: 'Heinz Ketchup',
   price: 200, // In cents - Translates to 2 euro
   categoryId: 'XXXXXX', // View the Product Categories page for a full list of all possible categories
   inStock: true, // Whether an item is in stock
@@ -32,6 +25,14 @@ Content-Type: application/json
   weight: 100,
   isWeighed: false, //  Set to true if the product can be sold based on weight. Defaults to false if not provided
   image?: File, // (Optional) Buffer Array
+}
+```
+
++++ Response
+
+```js
+{
+  success: true,
 }
 ```
 
@@ -43,19 +44,20 @@ Content-Type: application/json
 
 +++ Request
 
-```
-PUT /supermarket/products/:PRODUCT_BARCODE:
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json
-```
-
-```js
+```js [!badge variant="warning" text="PUT"] /supermarket/products/:PRODUCT_BARCODE:
 {
-  name: "Daniels Ketchup",
+  name: 'Another Ketchup',
   price: 400, // In cents - Translates to 4 euro
   inStock: true, // Whether an item is in stock
   image?: File, // (Optional) Buffer Array
+}
+```
+
++++ Response
+
+```js
+{
+  success: true,
 }
 ```
 
@@ -67,11 +69,16 @@ Content-Type: application/json
 
 +++ Request
 
+```js [!badge variant="danger" text="DELETE"] /supermarket/products/:PRODUCT_ID:
+// Empty body
 ```
-DELETE /supermarket/products/:PRODUCT_ID:
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json
+
++++ Response
+
+```js
+{
+  success: true,
+}
 ```
 
 +++
