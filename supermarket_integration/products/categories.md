@@ -36,4 +36,30 @@ Additionally you can fetch the above list programatically using the following en
 // Empty body
 ```
 
++++ Response
+
+```js
+{
+  categories: [
+    {
+      id: '61dc4e890001b2445694016b',
+      name: 'Beverages',
+    },
+    {
+      id: '61dc500e0001b2445694018d',
+      name: 'Confectionary',
+    },
+    {
+      id: '61dc4ef50001b24456940176',
+      name: 'Butcher',
+    },
+    {
+      id: '61dc4f740001b24456940182',
+      name: 'Chilled and Dairy',
+    },
+    ...
+  ];
+}
+```
+
 +++
