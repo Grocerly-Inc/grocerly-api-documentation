@@ -4,17 +4,25 @@ icon: pulse
 order: 1
 ---
 
-You can subscribe to different notifications by adding the events below.
+Based on the notifications you are subscribed to, Grocerly will **POST** the following payloads to the webhook you provided.
 
-#### Subscribe to Notifications
+---
 
-+++ Request
+Event: `order_completed`
 
+```js
+{
+    event: 'order_completed',
+    customer: {
+        firstName: 'John',
+        lastName: 'Doe',
+        email: 'johndoe@example.com'
+    },
+    items: [
+        {
+            barcode: 'XXXXXX',
+            quantity: 2,
+        }
+    ]
+}
 ```
-GET /supermarket/webhooks/subscriptions
-Host: https://api.grocerly.store
-X-API-KEY: :YOUR_API_KEY:
-Content-Type: application/json
-```
-
-+++
