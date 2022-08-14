@@ -55,7 +55,7 @@ X-API-KEY: :YOUR_API_KEY:
 Content-Type: application/json
 ```
 
-Request Payload:
++++ Request
 
 ```js
 {
@@ -73,3 +73,4 @@ Request Payload:
     }
 }
 ```
++++
