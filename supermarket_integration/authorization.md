@@ -10,6 +10,6 @@ Place the API Key in the header of each request as shown below:
 
 ```
 Host: https://api.grocerly.store
-Path: /supermarket/:API_PATH:
+Path: ENDPOINT
 X-API-KEY: YOUR_API_KEY
 ```
