@@ -69,7 +69,22 @@ In order to update any out of date or additional information, you can use the re
 
 ```js
 {
-  success: true,
+  name: 'Your Supermarket',
+  domain: 'https://yoursupermarket.com',
+  timezone: 'Europe/Malta',
+  logoUrl: 'https://storage.googleapis.com/grocerly/your-supermarket.png',
+  currencyCode: 'EUR',
+  location: {
+      latitude: 33.92296519540646,
+      longitude: 12.475051440278998,
+      address: 'address',
+      city: 'city',
+      country: 'country',
+  },
+  contact: {
+      email: 'info@yoursupermarket.com',
+      phoneNumber: '+35612345678' // This will be used when the courier needs to contact the supermarket.
+  }
 }
 ```
 

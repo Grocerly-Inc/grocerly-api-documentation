@@ -32,7 +32,15 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 ```js
 {
-  success: true,
+  barcode: 'XXXXXX',
+  name: 'Heinz Ketchup',
+  price: 200,
+  categoryId: 'XXXXXX',
+  inStock: true,
+  unit: 'GRAM',
+  weight: 100,
+  isWeighed: false,
+  imageUrl: "https://storage.googleapis.com/grocerly/image-example.png",
 }
 ```
 
@@ -57,7 +65,15 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 ```js
 {
-  success: true,
+  barcode: 'XXXXXX',
+  name: 'Another Ketchup',
+  price: 400,
+  categoryId: 'XXXXXX',
+  inStock: true,
+  unit: 'GRAM',
+  weight: 100,
+  isWeighed: false,
+  imageUrl: "https://storage.googleapis.com/grocerly/image-example.png",
 }
 ```
 
