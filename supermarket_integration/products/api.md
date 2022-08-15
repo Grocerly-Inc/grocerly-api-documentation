@@ -69,7 +69,7 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 +++ Request
 
-```js [!badge variant="danger" text="DELETE"] /supermarket/products/:PRODUCT_ID:
+```js [!badge variant="danger" text="DELETE"] /supermarket/products/:PRODUCT_BARCODE:
 // Empty body
 ```
 
