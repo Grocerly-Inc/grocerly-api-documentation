@@ -19,7 +19,7 @@ Based on the notifications you are subscribed to, Grocerly will **POST** the fol
     },
     items: [ // Array of product items
         {
-            barcode: 'XXXXXX',
+            barcodes: ['XXXXXX'],
             quantity: 2,
             price: 200, // Price in cents of the product at the time of placing an order.
         }

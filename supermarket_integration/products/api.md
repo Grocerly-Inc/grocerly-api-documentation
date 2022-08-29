@@ -16,13 +16,13 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 ```js [!badge variant="primary" text="POST"] /supermarket/products
 {
-  barcode: 'XXXXXX', // Must be unique
+  barcodes: ['XXXXXX'], // Must be unique
   name: 'Heinz Ketchup',
   price: 200, // In cents - Translates to 2 euro
   categoryId: 'XXXXXX', // View the Product Categories page for a full list of all possible categories
   inStock: true, // Whether an item is in stock
   unit: 'GRAM', // View the Product Units page for a full list of all possible units
-  weight: 100,
+  measure: 100,
   isWeighed: false, //  Set to true if the product can be sold based on weight. Defaults to false if not provided
   image?: File, // (Optional) Buffer Array
 }
@@ -32,13 +32,13 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 ```js
 {
-  barcode: 'XXXXXX',
+  barcodes: ['XXXXXX'],
   name: 'Heinz Ketchup',
   price: 200,
   categoryId: 'XXXXXX',
   inStock: true,
   unit: 'GRAM',
-  weight: 100,
+  measure: 100,
   isWeighed: false,
   imageUrl: "https://storage.googleapis.com/grocerly/image-example.png",
 }
@@ -65,13 +65,13 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 ```js
 {
-  barcode: 'XXXXXX',
+  barcodes: ['XXXXXX'],
   name: 'Another Ketchup',
   price: 400,
   categoryId: 'XXXXXX',
   inStock: true,
   unit: 'GRAM',
-  weight: 100,
+  measure: 100,
   isWeighed: false,
   imageUrl: "https://storage.googleapis.com/grocerly/image-example.png",
 }
