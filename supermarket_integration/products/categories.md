@@ -98,7 +98,15 @@ Additionall all of the above mentioned categories are referenced by their IDs, a
 |                   |                            | Dietary Food              | `61dc55240001b244569401ed` |
 |                   |                            | Other                     | `636dcffd16bd2d7b0729c62e` |
 | Household         | `61dc55240001b244569401e9` |                           |                            |
-|                   |                            |                           |                            |
+|                   |                            | Cleaning                  | `61dc55240001b244569401ea` |
+|                   |                            | Dishwash                  | `61dc55240001b244569401eb` |
+|                   |                            | Laundry                   | `61dc55240001b244569401ec` |
+|                   |                            | Tissues                   | `61dc55240001b244569401ed` |
+|                   |                            | Fragrances                | `61dc55240001b244569401ee` |
+|                   |                            | Stationery                | `61dc55240001b244569401ef` |
+|                   |                            | Garden & Plants           | `61dc55240001b244569401f0` |
+|                   |                            | DIY                       | `61dc55240001b244569401f1` |
+|                   |                            | Other                     | `61dc55240001b244569401f2` |
 | Meat and Fish     | `61dc4ef50001b24456940176` |                           |                            |
 |                   |                            |                           |                            |
 | Pantry            | `61dc53c20001b244569401c9` |                           |                            |
