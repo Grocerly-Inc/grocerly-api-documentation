@@ -112,7 +112,12 @@ Additionall all of the above mentioned categories are referenced by their IDs, a
 | Pantry            | `61dc53c20001b244569401c9` |                           |                            |
 |                   |                            |                           |                            |
 | Pet               | `61dc571c0001b24456940209` |                           |                            |
-|                   |                            |                           |                            |
+|                   |                            | Cat Food                  | `61dc571c0001b2445694020a` |
+|                   |                            | Dog Food                  | `61dc571c0001b2445694020b` |
+|                   |                            | Other Pet Food            | `61dc571c0001b2445694020c` |
+|                   |                            | Hygeine                   | `61dc571c0001b2445694020d` |
+|                   |                            | Toys & Accessories        | `636d9f1910a65a3c614a4a6c` |
+|                   |                            | Other                     | `636d9f3610a65a3c614a4a6d` |
 | Snacks            | `61dc56d00001b24456940200` |                           |                            |
 |                   |                            | Chocolate                 | `61dc56d00001b24456940201` |
 |                   |                            | Sweets                    | `636da27f10a65a3c614a4a7a` |
