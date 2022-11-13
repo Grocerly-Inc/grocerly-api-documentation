@@ -108,7 +108,15 @@ Additionall all of the above mentioned categories are referenced by their IDs, a
 |                   |                            | DIY                        | `61dc55240001b244569401f1` |
 |                   |                            | Other                      | `61dc55240001b244569401f2` |
 | Meat and Fish     | `61dc4ef50001b24456940176` |                            |                            |
-|                   |                            |                            |                            |
+|                   |                            | Beef                       | `61dc4ef50001b24456940177` |
+|                   |                            | Pork                       | `61dc4ef50001b24456940178` |
+|                   |                            | Chicken & Poultry          | `61dc4ef50001b24456940179` |
+|                   |                            | Sausages & Bacon           | `61dc4ef50001b2445694017a` |
+|                   |                            | Burgers                    | `61dc4ef50001b2445694017b` |
+|                   |                            | Fish                       | `61dc4ef50001b2445694017c` |
+|                   |                            | Lamb                       | `61dc4ef50001b2445694017d` |
+|                   |                            | Horse                      | `61dc4ef50001b2445694017e` |
+|                   |                            | Other                      | `61dc4ef50001b2445694017f` |
 | Pantry            | `61dc53c20001b244569401c9` |                            |                            |
 |                   |                            | Pasta and Rice             | `61dc53c20001b244569401ca` |
 |                   |                            | Dips and Spreads           | `61dc53c20001b244569401cb` |
