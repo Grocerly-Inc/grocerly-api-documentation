@@ -114,8 +114,26 @@ Additionall all of the above mentioned categories are referenced by their IDs, a
 | Pet               | `61dc571c0001b24456940209` |                           |                            |
 |                   |                            |                           |                            |
 | Snacks            | `61dc56d00001b24456940200` |                           |                            |
-|                   |                            |                           |                            |
+|                   |                            | Chocolate                 | `61dc56d00001b24456940201` |
+|                   |                            | Sweets                    | `636da27f10a65a3c614a4a7a` |
+|                   |                            | Crisps                    | `636da29710a65a3c614a4a7b` |
+|                   |                            | Cereals                   | `636da2b210a65a3c614a4a7c` |
+|                   |                            | Cakes                     | `636da2cd10a65a3c614a4a7d` |
+|                   |                            | Biscuits                  | `636da2ed10a65a3c614a4a7e` |
+|                   |                            | Other                     | `636da30010a65a3c614a4a7f` |
 | Toileteries       | `61dc56ee0001b24456940204` |                           |                            |
-|                   |                            |                           |                            |
+|                   |                            | Body and Face Care        | `61dc56ee0001b24456940205` |
+|                   |                            | Bath and Shower Gels      | `61dc56ee0001b24456940206` |
+|                   |                            | Oral Care                 | `636da0bc10a65a3c614a4a6e` |
+|                   |                            | Hair Care                 | `636da0db10a65a3c614a4a6f` |
+|                   |                            | Women's Deodorants        | `636da10310a65a3c614a4a70` |
+|                   |                            | Men's Deodorants          | `636da12110a65a3c614a4a72` |
+|                   |                            | Perfumes                  | `636da14510a65a3c614a4a73` |
+|                   |                            | Feminine Care             | `636da16010a65a3c614a4a74` |
+|                   |                            | Male Toiletaries          | `636da18a10a65a3c614a4a75` |
+|                   |                            | Shaving Products          | `636da1a710a65a3c614a4a76` |
+|                   |                            | Beauty                    | `636da1cd10a65a3c614a4a77` |
+|                   |                            | Sun Care                  | `636da1df10a65a3c614a4a78` |
+|                   |                            | Others                    | `636da1f410a65a3c614a4a79` |
 
 ---
