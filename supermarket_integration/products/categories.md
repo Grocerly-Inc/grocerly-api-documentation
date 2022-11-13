@@ -92,7 +92,11 @@ Additionall all of the above mentioned categories are referenced by their IDs, a
 |                   |                            | Vegetables                | `61dc52d10001b244569401bf` |
 |                   |                            | Other                     | `61dc52d10001b244569401c0` |
 | Health            | `636da38910a65a3c614a4a80` |                           |                            |
-|                   |                            |                           |                            |
+|                   |                            | Organic                   | `61dc55240001b244569401ea` |
+|                   |                            | Gluten Free               | `61dc55240001b244569401eb` |
+|                   |                            | Sugar Free                | `61dc55240001b244569401ec` |
+|                   |                            | Dietary Food              | `61dc55240001b244569401ed` |
+|                   |                            | Other                     | `636dcffd16bd2d7b0729c62e` |
 | Household         | `61dc55240001b244569401e9` |                           |                            |
 |                   |                            |                           |                            |
 | Meat and Fish     | `61dc4ef50001b24456940176` |                           |                            |
