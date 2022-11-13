@@ -39,24 +39,22 @@ Additionally you can fetch the above list programatically using the following en
 {
   categories: [
     {
-      "_id": "61dc4d05239ecc4395c5d0b5",
+      "id": "61dc4d05239ecc4395c5d0b5",
       "name": "Bakery",
-      "photoUrl": null,
       "subcategories": [
           {
-              "_id": "61dc4d05239ecc4395c5d0b6",
+              "id": "61dc4d05239ecc4395c5d0b6",
               "name": "Bread"
           },
           {
-              "_id": "61dc4d05239ecc4395c5d0b7",
+              "id": "61dc4d05239ecc4395c5d0b7",
               "name": "Other"
           }
       ]
     },
     {
-      "_id": "61dc4e890001b2445694016b",
+      "id": "61dc4e890001b2445694016b",
       "name": "Beverages",
-      "photoUrl": null,
       ...
     },
     ...
