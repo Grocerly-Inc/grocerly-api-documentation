@@ -33,16 +33,38 @@ All of the supported Product Categories, referenced by their IDs, are listed bel
 |                   |                            | Other              | `636da8b510a65a3c614a4a81` |
 |                   |                            |                    |                            |
 | Chilled and Dairy | `61dc4f740001b24456940182` |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
 | Deli              | `61dc500e0001b2445694018d` |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
 | Frozen            | `61dc51d80001b244569401ae` |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
 | Fruits and Veg    | `61dc52d10001b244569401bd` |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
 | Health            | `636da38910a65a3c614a4a80` |                    |                            |
+|                   |                            |                    |                            |
 | Household         | `61dc55240001b244569401e9` |                    |                            |
+|                   |                            |                    |                            |
 | Meat and Fish     | `61dc4ef50001b24456940176` |                    |                            |
+|                   |                            |                    |                            |
 | Pantry            | `61dc53c20001b244569401c9` |                    |                            |
+|                   |                            |                    |                            |
 | Pet               | `61dc571c0001b24456940209` |                    |                            |
+|                   |                            |                    |                            |
 | Snacks            | `61dc56d00001b24456940200` |                    |                            |
+|                   |                            |                    |                            |
 | Toileteries       | `61dc56ee0001b24456940204` |                    |                            |
+|                   |                            |                    |                            |
 
 ---
 
