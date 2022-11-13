@@ -4,71 +4,7 @@ icon: stack
 order: 1
 ---
 
-All of the supported Product Categories, referenced by their IDs, are listed below:
-
-| Category Name     | Category ID                | Subcategory Name   | Subcategory ID             |
-| ----------------- | -------------------------- | ------------------ | -------------------------- |
-| Bakery            | `61dc4d05239ecc4395c5d0b5` |                    |                            |
-|                   |                            | Bread              | `61dc4d05239ecc4395c5d0b6` |
-|                   |                            | Other              | `61dc4d05239ecc4395c5d0b7` |
-|                   |                            |                    |                            |
-| Baby              | `636d9dd610a65a3c614a4a68` |                    |                            |
-|                   |                            | Food               | `61dc571c0001b2445694020a` |
-|                   |                            | Hygiene            | `61dc571c0001b2445694020b` |
-|                   |                            | Laundry            | `61dc571c0001b2445694020c` |
-|                   |                            | Wipes              | `61dc571c0001b2445694020d` |
-|                   |                            | Toys & Accessories | `636d9e0410a65a3c614a4a69` |
-|                   |                            | Nappies            | `636d9e6910a65a3c614a4a6a` |
-|                   |                            | Other              | `636d9e8110a65a3c614a4a6b` |
-|                   |                            |                    |                            |
-| Beverages         | `61dc4e890001b2445694016b` |                    |                            |
-|                   |                            | Beer and Ciders    | `61dc4e890001b2445694016c` |
-|                   |                            | Soft Drinks        | `61dc4e890001b2445694016d` |
-|                   |                            | Juices and Shakes  | `61dc4e890001b2445694016e` |
-|                   |                            | Water              | `61dc4e890001b2445694016f` |
-|                   |                            | Tea and Coffee     | `61dc4e890001b24456940170` |
-|                   |                            | Spirits            | `61dc4e890001b24456940171` |
-|                   |                            | Wine               | `61dc4e890001b24456940172` |
-|                   |                            | Energy Drinks      | `61dc4e890001b24456940173` |
-|                   |                            | Other              | `636da8b510a65a3c614a4a81` |
-|                   |                            |                    |                            |
-| Chilled and Dairy | `61dc4f740001b24456940182` |                    |                            |
-|                   |                            |                    |                            |
-|                   |                            |                    |                            |
-|                   |                            |                    |                            |
-|                   |                            |                    |                            |
-|                   |                            |                    |                            |
-|                   |                            |                    |                            |
-| Deli              | `61dc500e0001b2445694018d` |                    |                            |
-|                   |                            |                    |                            |
-|                   |                            |                    |                            |
-|                   |                            |                    |                            |
-|                   |                            |                    |                            |
-| Frozen            | `61dc51d80001b244569401ae` |                    |                            |
-|                   |                            |                    |                            |
-|                   |                            |                    |                            |
-| Fruits and Veg    | `61dc52d10001b244569401bd` |                    |                            |
-|                   |                            |                    |                            |
-|                   |                            |                    |                            |
-|                   |                            |                    |                            |
-| Health            | `636da38910a65a3c614a4a80` |                    |                            |
-|                   |                            |                    |                            |
-| Household         | `61dc55240001b244569401e9` |                    |                            |
-|                   |                            |                    |                            |
-| Meat and Fish     | `61dc4ef50001b24456940176` |                    |                            |
-|                   |                            |                    |                            |
-| Pantry            | `61dc53c20001b244569401c9` |                    |                            |
-|                   |                            |                    |                            |
-| Pet               | `61dc571c0001b24456940209` |                    |                            |
-|                   |                            |                    |                            |
-| Snacks            | `61dc56d00001b24456940200` |                    |                            |
-|                   |                            |                    |                            |
-| Toileteries       | `61dc56ee0001b24456940204` |                    |                            |
-|                   |                            |                    |                            |
-
----
-
-Additionally you can fetch the above list programatically using the following endpoint:
+You can fetch a list of all product categories and their subcategories programatically using the following endpoint:
 
 +++ Request
 
@@ -106,3 +42,66 @@ Additionally you can fetch the above list programatically using the following en
 ```
 
 +++
+
+---
+
+Additionall all of the above mentioned categories are referenced by their IDs, and listed below:
+
+| Category Name     | Category ID                | Subcategory Name   | Subcategory ID             |
+| ----------------- | -------------------------- | ------------------ | -------------------------- |
+| Bakery            | `61dc4d05239ecc4395c5d0b5` |                    |                            |
+|                   |                            | Bread              | `61dc4d05239ecc4395c5d0b6` |
+|                   |                            | Other              | `61dc4d05239ecc4395c5d0b7` |
+| Baby              | `636d9dd610a65a3c614a4a68` |                    |                            |
+|                   |                            | Food               | `61dc571c0001b2445694020a` |
+|                   |                            | Hygiene            | `61dc571c0001b2445694020b` |
+|                   |                            | Laundry            | `61dc571c0001b2445694020c` |
+|                   |                            | Wipes              | `61dc571c0001b2445694020d` |
+|                   |                            | Toys & Accessories | `636d9e0410a65a3c614a4a69` |
+|                   |                            | Nappies            | `636d9e6910a65a3c614a4a6a` |
+|                   |                            | Other              | `636d9e8110a65a3c614a4a6b` |
+| Beverages         | `61dc4e890001b2445694016b` |                    |                            |
+|                   |                            | Beer and Ciders    | `61dc4e890001b2445694016c` |
+|                   |                            | Soft Drinks        | `61dc4e890001b2445694016d` |
+|                   |                            | Juices and Shakes  | `61dc4e890001b2445694016e` |
+|                   |                            | Water              | `61dc4e890001b2445694016f` |
+|                   |                            | Tea and Coffee     | `61dc4e890001b24456940170` |
+|                   |                            | Spirits            | `61dc4e890001b24456940171` |
+|                   |                            | Wine               | `61dc4e890001b24456940172` |
+|                   |                            | Energy Drinks      | `61dc4e890001b24456940173` |
+|                   |                            | Other              | `636da8b510a65a3c614a4a81` |
+| Chilled and Dairy | `61dc4f740001b24456940182` |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+| Deli              | `61dc500e0001b2445694018d` |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+| Frozen            | `61dc51d80001b244569401ae` |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+| Fruits and Veg    | `61dc52d10001b244569401bd` |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+|                   |                            |                    |                            |
+| Health            | `636da38910a65a3c614a4a80` |                    |                            |
+|                   |                            |                    |                            |
+| Household         | `61dc55240001b244569401e9` |                    |                            |
+|                   |                            |                    |                            |
+| Meat and Fish     | `61dc4ef50001b24456940176` |                    |                            |
+|                   |                            |                    |                            |
+| Pantry            | `61dc53c20001b244569401c9` |                    |                            |
+|                   |                            |                    |                            |
+| Pet               | `61dc571c0001b24456940209` |                    |                            |
+|                   |                            |                    |                            |
+| Snacks            | `61dc56d00001b24456940200` |                    |                            |
+|                   |                            |                    |                            |
+| Toileteries       | `61dc56ee0001b24456940204` |                    |                            |
+|                   |                            |                    |                            |
+
+---
