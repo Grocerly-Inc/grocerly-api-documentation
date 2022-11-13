@@ -47,7 +47,7 @@ You can fetch a list of all product categories and their subcategories programat
 
 Additionall all of the above mentioned categories are referenced by their IDs, and listed below:
 
-| Category Name     | Category ID                | Subcategory Name   | Subcategory ID             |
+| Category          | Category ID                | Subcategory        | Subcategory ID             |
 | ----------------- | -------------------------- | ------------------ | -------------------------- |
 | Bakery            | `61dc4d05239ecc4395c5d0b5` |                    |                            |
 |                   |                            | Bread              | `61dc4d05239ecc4395c5d0b6` |
