@@ -16,15 +16,17 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 ```js [!badge variant="primary" text="POST"] /supermarket/products
 {
-  barcodes: ['XXXXXX'], // Must be unique
+  barcode: 'XXXXXX', // Replace with the product barcode
+  supermarketReferenceId: 'XXXXXX' // Replace with your internal reference ID for this product
   name: 'Heinz Ketchup',
   price: 200, // In cents - Translates to 2 euro
   categoryId: 'XXXXXX', // View the Product Categories page for a full list of all possible categories
+  subcategoryId: 'XXXXXX',
   inStock: true, // Whether an item is in stock
   unit: 'GRAM', // View the Product Units page for a full list of all possible units
   measure: 100,
-  isWeighed: false, //  Set to true if the product can be sold based on weight. Defaults to false if not provided
-  image?: File, // (Optional) Buffer Array
+  isWeighed: false, //  Set to true if the product can be sold based on weight
+  photoUrl?: 'https://your-photo-url-here', // (Optional) Public product photo url
 }
 ```
 
@@ -32,15 +34,18 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 ```js
 {
-  barcodes: ['XXXXXX'],
+  id: 'XXXXXXX' // Grocerly automatically generated Product ID
+  barcode: 'XXXXXX',
+  supermarketReferenceId: 'XXXXXX',
   name: 'Heinz Ketchup',
   price: 200,
   categoryId: 'XXXXXX',
+  subcategoryId: 'XXXXXX',
   inStock: true,
   unit: 'GRAM',
   measure: 100,
   isWeighed: false,
-  imageUrl: "https://storage.googleapis.com/grocerly/image-example.png",
+  photoUrl: "https://storage.googleapis.com/grocerly/image-example.png",
 }
 ```
 
