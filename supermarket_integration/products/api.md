@@ -57,7 +57,7 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 +++ Request
 
-```js [!badge variant="warning" text="PUT"] /supermarket/products/:PRODUCT_BARCODE:
+```js [!badge variant="warning" text="PUT"] /supermarket/products/:ID:REFERENCE_ID:BARCODE:
 {
   name: 'Another Ketchup',
   price: 400, // In cents - Translates to 4 euro
@@ -93,7 +93,7 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 +++ Request
 
-```js [!badge variant="danger" text="DELETE"] /supermarket/products/:PRODUCT_BARCODE:
+```js [!badge variant="danger" text="DELETE"] /supermarket/products/:ID:REFERENCE_ID:BARCODE:
 // Empty body
 ```
 
