@@ -62,7 +62,7 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
   name: 'Another Ketchup',
   price: 400, // In cents - Translates to 4 euro
   inStock: true, // Whether an item is in stock
-  image?: File, // (Optional) Buffer Array
+  photoUrl?: 'https://your-photo-url-here', // (Optional) Public product photo url
 }
 ```
 
@@ -70,15 +70,18 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 ```js
 {
-  barcodes: ['XXXXXX'],
+  id: 'XXXXXXX',
+  barcode: 'XXXXXX',
+  supermarketReferenceId: 'XXXXXXX',
   name: 'Another Ketchup',
   price: 400,
   categoryId: 'XXXXXX',
+  subcategoryId: 'XXXXXX',
   inStock: true,
   unit: 'GRAM',
   measure: 100,
   isWeighed: false,
-  imageUrl: "https://storage.googleapis.com/grocerly/image-example.png",
+  photoUrl: "https://storage.googleapis.com/grocerly/image-example.png",
 }
 ```
 
