@@ -23,7 +23,7 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
   categoryId: 'XXXXXX', // View the Product Categories page for a full list of all possible categories
   subcategoryId: 'XXXXXX',
   inStock: true, // Whether an item is in stock
-  unit: 'GRAM', // View the Product Units page for a full list of all possible units
+  unitId: 'GRAM', // View the Product Units page for a full list of all possible units
   measure: 100,
   isWeighed: false, //  Set to true if the product can be sold based on weight
   photoUrl?: 'https://your-photo-url-here', // (Optional) Public product photo url
@@ -42,7 +42,7 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
   categoryId: 'XXXXXX',
   subcategoryId: 'XXXXXX',
   inStock: true,
-  unit: 'GRAM',
+  unitId: 'GRAM',
   measure: 100,
   isWeighed: false,
   photoUrl: "https://storage.googleapis.com/grocerly/image-example.png",
@@ -57,7 +57,7 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 +++ Request
 
-```js [!badge variant="warning" text="PUT"] /supermarket/products/:ID:REFERENCE_ID:BARCODE:
+```js [!badge variant="warning" text="PUT"] /supermarket/product/:ID:REFERENCE_ID:BARCODE:
 {
   name: 'Another Ketchup',
   price: 400, // In cents - Translates to 4 euro
@@ -78,7 +78,7 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
   categoryId: 'XXXXXX',
   subcategoryId: 'XXXXXX',
   inStock: true,
-  unit: 'GRAM',
+  unitId: 'GRAM',
   measure: 100,
   isWeighed: false,
   photoUrl: "https://storage.googleapis.com/grocerly/image-example.png",
