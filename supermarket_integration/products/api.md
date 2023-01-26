@@ -59,10 +59,16 @@ These sections provide the necessary information required to **CREATE**, **UPDAT
 
 ```js [!badge variant="warning" text="PUT"] /supermarket/product/:ID:REFERENCE_ID:BARCODE:
 {
-  name: 'Another Ketchup',
-  price: 400, // In cents - Translates to 4 euro
-  inStock: true, // Whether an item is in stock
-  photoUrl?: 'https://your-photo-url-here', // (Optional) Public product photo url
+  name?: 'Another Ketchup',
+  price?: 400, // In cents - Translates to 4 euro
+  inStock?: true, // Whether an item is in stock
+  photoUrl?: 'https://your-photo-url-here', // Public product photo url
+  categoryId?: 'XXXXXX',
+  subcategoryId?: 'XXXXXX',
+  isWeighed?: true,
+  unitId?: 'GRAM',
+  measure?: 100,
+
 }
 ```
 
