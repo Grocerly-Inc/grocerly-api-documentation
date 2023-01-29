@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.728015482007">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.728273801910">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Product API Sync</title>
     <meta name="title" content="Product API Sync">
-    <meta name="description" content="These sections provide the necessary information required to CREATE, UPDATE and DELETE products on the Grocerly system allowing you to synchronise..." />
+    <meta name="description" content="These sections provide the necessary information required to FIND, GET, CREATE, UPDATE and DELETE products on the Grocerly system allowing you to..." />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.grocerly.dev/supermarket_integration/products/api/" />
@@ -20,22 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.grocerly.dev/supermarket_integration/products/api/">
     <meta property="og:title" content="Product API Sync">
-    <meta property="og:description" content="These sections provide the necessary information required to CREATE, UPDATE and DELETE products on the Grocerly system allowing you to synchronise...">
+    <meta property="og:description" content="These sections provide the necessary information required to FIND, GET, CREATE, UPDATE and DELETE products on the Grocerly system allowing you to...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.grocerly.dev/supermarket_integration/products/api/">
     <meta property="twitter:title" content="Product API Sync">
-    <meta property="twitter:description" content="These sections provide the necessary information required to CREATE, UPDATE and DELETE products on the Grocerly system allowing you to synchronise...">
+    <meta property="twitter:description" content="These sections provide the necessary information required to FIND, GET, CREATE, UPDATE and DELETE products on the Grocerly system allowing you to...">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../resources/css/retype.css?v=2.4.0.728015482007" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.728273801910" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.728015482007" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.728273801910" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.728015482007" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.728015482007" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.728273801910" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.728273801910" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -159,10 +159,109 @@
         <span>Product API Sync</span>
     </h1>
 </doc-anchor-target>
-<p>These sections provide the necessary information required to <strong>CREATE</strong>, <strong>UPDATE</strong> and <strong>DELETE</strong> products on the Grocerly system allowing you to synchronise your products.</p>
+<p>These sections provide the necessary information required to <strong>FIND</strong>, <strong>GET</strong>, <strong>CREATE</strong>, <strong>UPDATE</strong> and <strong>DELETE</strong> products on the Grocerly system allowing you to synchronise your products.</p>
 <blockquote>
 <p>Please view the <a href="../units/">Product Units</a> and <a href="../categories/">Product Categories</a> pages for a full list of all available product units and categories.</p>
 </blockquote>
+<hr />
+<doc-anchor-target id="find-a-list-of-products">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#find-a-list-of-products">#</doc-anchor-trigger>
+        <span>Find a list of products</span>
+    </h4>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="request">
+<template #title>Request</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title"><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>POST</span>
+</span> /supermarket/products</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">// This will return a list of products that your supermarket has associated to the Grocerly app.
+// By default it will only return the first 10 products.
+// If you'd like to view more you can paginate through more by appending the url with the following query string
+//
+// ?hitsPerPage=10&amp;page=1</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="response">
+<template #title>Response</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">[
+  {
+    id: 'XXXXXXX' // Grocerly automatically generated Product ID
+    barcode: 'XXXXXX',
+    supermarketReferenceId: 'XXXXXX',
+    name: 'Heinz Ketchup',
+    price: 200,
+    categoryId: 'XXXXXX',
+    subcategoryId: 'XXXXXX',
+    inStock: true,
+    unitId: 'GRAM',
+    measure: 100,
+    isWeighed: false,
+    photoUrl: &quot;https://storage.googleapis.com/grocerly/image-example.png&quot;,
+  },
+  {
+    id: 'XXXXXXX' // Grocerly automatically generated Product ID
+    barcode: 'XXXXXX',
+    supermarketReferenceId: 'XXXXXX',
+    name: 'Heinz Ketchup',
+    price: 200,
+    categoryId: 'XXXXXX',
+    subcategoryId: 'XXXXXX',
+    inStock: true,
+    unitId: 'GRAM',
+    measure: 100,
+    isWeighed: false,
+    photoUrl: &quot;https://storage.googleapis.com/grocerly/image-example.png&quot;,
+  },
+  ...
+
+]</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<hr />
+<doc-anchor-target id="get-a-product">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#get-a-product">#</doc-anchor-trigger>
+        <span>Get a product</span>
+    </h4>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="request">
+<template #title>Request</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title"><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>POST</span>
+</span> /supermarket/products/$variableId</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">// The `variableId` can be any one of the following:
+// 1. Grocerly ID
+// 2. Product Barcode
+// 3. Supermarket Reference ID</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="response">
+<template #title>Response</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">{
+  id: 'XXXXXXX' // Grocerly automatically generated Product ID
+  barcode: 'XXXXXX',
+  supermarketReferenceId: 'XXXXXX',
+  name: 'Heinz Ketchup',
+  price: 200,
+  categoryId: 'XXXXXX',
+  subcategoryId: 'XXXXXX',
+  inStock: true,
+  unitId: 'GRAM',
+  measure: 100,
+  isWeighed: false,
+  photoUrl: &quot;https://storage.googleapis.com/grocerly/image-example.png&quot;,
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 <hr />
 <doc-anchor-target id="create-a-new-product">
     <h4>
