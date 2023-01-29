@@ -146,6 +146,7 @@ These sections provide the necessary information required to **FIND**, **GET**, 
 
 ```js [!badge variant="warning" text="PUT"] /supermarket/product/:ID:REFERENCE_ID:BARCODE:
 {
+  barcode?: 'XXXXXX'
   name?: 'Another Ketchup',
   price?: 400, // In cents - Translates to 4 euro
   inStock?: true, // Whether an item is in stock
@@ -155,7 +156,6 @@ These sections provide the necessary information required to **FIND**, **GET**, 
   isWeighed?: true,
   unitId?: 'GRAM',
   measure?: 100,
-
 }
 ```
 
