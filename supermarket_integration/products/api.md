@@ -4,9 +4,96 @@ icon: sync
 order: 3
 ---
 
-These sections provide the necessary information required to **CREATE**, **UPDATE** and **DELETE** products on the Grocerly system allowing you to synchronise your products.
+These sections provide the necessary information required to **FIND**, **GET**, **CREATE**, **UPDATE** and **DELETE** products on the Grocerly system allowing you to synchronise your products.
 
 > Please view the [Product Units](units.md) and [Product Categories](categories.md) pages for a full list of all available product units and categories.
+
+---
+
+#### Find a list of products
+
++++Request
+
+```js [!badge variant="primary" text="POST"] /supermarket/products
+// This will return a list of products that your supermarket has associated to the Grocerly app.
+// By default it will only return the first 10 products.
+// If you'd like to view more you can paginate through more by appending the url with the following query string
+//
+// ?hitsPerPage=10&page=1
+```
+
++++ Response
+
+```js
+[
+  {
+    id: 'XXXXXXX' // Grocerly automatically generated Product ID
+    barcode: 'XXXXXX',
+    supermarketReferenceId: 'XXXXXX',
+    name: 'Heinz Ketchup',
+    price: 200,
+    categoryId: 'XXXXXX',
+    subcategoryId: 'XXXXXX',
+    inStock: true,
+    unitId: 'GRAM',
+    measure: 100,
+    isWeighed: false,
+    photoUrl: "https://storage.googleapis.com/grocerly/image-example.png",
+  },
+  {
+    id: 'XXXXXXX' // Grocerly automatically generated Product ID
+    barcode: 'XXXXXX',
+    supermarketReferenceId: 'XXXXXX',
+    name: 'Heinz Ketchup',
+    price: 200,
+    categoryId: 'XXXXXX',
+    subcategoryId: 'XXXXXX',
+    inStock: true,
+    unitId: 'GRAM',
+    measure: 100,
+    isWeighed: false,
+    photoUrl: "https://storage.googleapis.com/grocerly/image-example.png",
+  },
+  ...
+
+]
+```
+
++++
+
+---
+
+#### Get a product
+
++++Request
+
+```js [!badge variant="primary" text="POST"] /supermarket/products/$variableId
+// The `variableId` can be any one of the following:
+// 1. Grocerly ID
+// 2. Product Barcode
+// 3. Supermarket Reference ID
+```
+
++++ Response
+
+```js
+{
+  id: 'XXXXXXX' // Grocerly automatically generated Product ID
+  barcode: 'XXXXXX',
+  supermarketReferenceId: 'XXXXXX',
+  name: 'Heinz Ketchup',
+  price: 200,
+  categoryId: 'XXXXXX',
+  subcategoryId: 'XXXXXX',
+  inStock: true,
+  unitId: 'GRAM',
+  measure: 100,
+  isWeighed: false,
+  photoUrl: "https://storage.googleapis.com/grocerly/image-example.png",
+}
+```
+
++++
 
 ---
 
